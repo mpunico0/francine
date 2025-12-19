@@ -1,11 +1,10 @@
-
 * {
     margin: auto;
     padding: auto;
     font-size: 62.5%;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /*phone 320px*/
@@ -297,4 +296,5 @@ body {
 
 #intimatecontainer1 h1 {
     color: #eb899f;
+
 }
