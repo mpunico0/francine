@@ -72,13 +72,11 @@ body {
 
 .infocontainer {
     color: #dbc05d;
-    height: 90%;
+    height: 80%;
     max-width: 100vw;
     font-size: 5rem;
     place-content: center;
 }
-
-
 
 .infocontainer h1 {
     padding-top: 15%;
@@ -115,15 +113,18 @@ body {
 
 .polaroid img {
     max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: rgb(51, 51, 51);
 }
 
 .controller {
-    height: 10%;
+    height: 13%;
     display: flex;
     border-top: solid;
     border-width: 2px;
     border-color: #dbc05d;
-    place-content: center;
+    align-items: center;
 }
 
 .next {
@@ -135,43 +136,76 @@ body {
 }
 
 .timeline {
-    height: 100dvh;
-    background-color: #FFF1BF;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    flex-direction: row;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    height: 100vh;
 }
 
 .timmain {
-    height: 100dvh;
-    text-align: center;
-    color: #A60F1B;
-    font-size: 7rem;
     display: block;
-    max-width: 100vw;
-    justify-content: center;
-    place-content: center;
+    flex: 1 0 100%;
+    background-color: #dbc05d;
+    height: 100%; 
 }
 
 .timelinecontainer {
+    color: #A60F1B;
     height: 80%;
+    max-width: 100vw;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*.timelinecontainergrid {
+    color: #A60F1B;
+    height: 80%;
+    max-width: 100vw;
+    font-size: 5rem;
+    display: grid;
+    grid-template-rows: 8% 72%;
+    place-items: center;
+}
+*/
+.timelinecontainer .polaroid {
+    margin-top: 0;
+    max-width: 80%;
+    flex: 0 0 80%;
 }
 
 .timelinecontainer h1 {
     max-width: 80%;
-    top: 50%;
+}
+
+
+.polaroid p {
+    max-width: 95%;
+    font-size: 2rem;
+    margin-top: 10%;
+    color: black;
+    text-align: justify;
 }
 
 .timnext {
     font-size: 1.5rem;
     text-decoration: none;
-    background-color: #dbc05d;
-    color: #400308;
+    background-color: #701018;
+    color: #dbc05d;
     padding: 1em 2em 1em 2em;
 }
 
 .timcontroller {
-    height: 10%;
+    height: 15%;
     display: flex;
     border-top: solid;
     border-width: 2px;
-    border-color: #dbc05d;
-    background-color: #A60F1B;
+    border-color: #A60F1B;
 }
