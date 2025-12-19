@@ -5,7 +5,7 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /*phone 320px*/
@@ -26,6 +26,7 @@ body {
     background-image: linear-gradient(rgba(255, 241, 191, 0.55)), url("titlepics/titlescreen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    place-content: center;
 }
 .title h1 {
     font-size: 5rem;
@@ -71,15 +72,13 @@ body {
 
 .infocontainer {
     color: #dbc05d;
-    height: 85%;
+    height: 90%;
     max-width: 100vw;
     font-size: 5rem;
-    display: block;
+    place-content: center;
 }
 
-.controller hr {
-    border-color: #dbc05d;
-}
+
 
 .infocontainer h1 {
     padding-top: 15%;
@@ -120,11 +119,11 @@ body {
 
 .controller {
     height: 10%;
-    text-align: right;
     display: flex;
     border-top: solid;
     border-width: 2px;
     border-color: #dbc05d;
+    place-content: center;
 }
 
 .next {
@@ -133,6 +132,46 @@ body {
     background-color: #dbc05d;
     color: #400308;
     padding: 1em 2em 1em 2em;
-
 }
 
+.timeline {
+    height: 100dvh;
+    background-color: #FFF1BF;
+}
+
+.timmain {
+    height: 100dvh;
+    text-align: center;
+    color: #A60F1B;
+    font-size: 7rem;
+    display: block;
+    max-width: 100vw;
+    justify-content: center;
+    place-content: center;
+}
+
+.timelinecontainer {
+    height: 80%;
+}
+
+.timelinecontainer h1 {
+    max-width: 80%;
+    top: 50%;
+}
+
+.timnext {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #dbc05d;
+    color: #400308;
+    padding: 1em 2em 1em 2em;
+}
+
+.timcontroller {
+    height: 10%;
+    display: flex;
+    border-top: solid;
+    border-width: 2px;
+    border-color: #dbc05d;
+    background-color: #A60F1B;
+}
