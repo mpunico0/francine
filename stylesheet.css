@@ -5,7 +5,27 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow: scroll;
+    overflow: hidden;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.homebutton {
+    position: fixed;
+    display: block;
+    font-size: 5rem;
+    opacity: 0.75;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.homebutton i {
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 /*phone 320px*/
@@ -350,3 +370,51 @@ body {
     max-width: 80%;
     flex: 0 0 80%;
 }
+
+#inticontroller {
+    background-color: #fed3e7;
+}
+
+#intiblocker {
+    background-color: #fed3e7;
+}
+
+.reltim {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    flex-direction: row;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    height: 100vh;
+}
+
+.reltim .timelinecontainer {
+    background-image: url('bg/bg.jpg');
+}
+
+.reltim .timcontroller {
+    background-color: #fed3e7;
+}
+
+.reltim .timnext {
+    background-color: #b65165;
+    color: white;
+}
+
+.reltim .blocker {
+    background-color: #fed3e7;
+}
+
+.reltim .slidenav a {
+    background-color: #d65591;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #972359;
+}
+
+.reltim .slidenav a:hover {
+    background-color: #972359;
+}
+
+
