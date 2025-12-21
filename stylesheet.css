@@ -5,7 +5,7 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 a {
@@ -265,8 +265,9 @@ body {
 .slideshow {
     display: flex;
     aspect-ratio: 1 / 1;
-    overflow: auto;
+    overflow-x: hidden;
     scroll-snap-type: x-mandatory;
+    -webkit-overflow-scrolling: touch; 
     scroll-behavior: smooth;
     background-color: rgb(51, 51, 51);
 }
@@ -417,4 +418,9 @@ body {
     background-color: #972359;
 }
 
-
+.polaroid video {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: rgb(51, 51, 51);
+}
