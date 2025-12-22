@@ -475,7 +475,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-   
+    height: 80%;
 }
 
 .summarybody h1 {
@@ -517,6 +517,10 @@ body {
     font-size: 1.5rem;
 }
 
+.summary .timnext {
+    height: 10%;
+}
+
 .summary a {
     background-color: #c02632;
 }
@@ -554,4 +558,5 @@ body {
 .finishcontainer {
     height: 50%;
     place-content: center;
+
 }
