@@ -503,7 +503,7 @@ body {
     aspect-ratio: 1 / 1;
     margin: 1rem;
     overflow: scroll;
-    height: 50%;
+    height: 60%;
 }
 
 .polaroidholder img {
@@ -515,10 +515,6 @@ body {
 
 .minipolaroid p {
     font-size: 1.5rem;
-}
-
-.summary .timnext {
-    height: 10%;
 }
 
 .summary a {
@@ -558,5 +554,4 @@ body {
 .finishcontainer {
     height: 50%;
     place-content: center;
-
 }
